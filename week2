@@ -1,0 +1,66 @@
+#include <iostream> 
+#include <cstdlib> 
+using namespace std; 
+ 
+ 
+{ 
+ 
+int a = 90; 
+ 
+} 
+ 
+namespace N2 
+ 
+{ 
+ 
+int a = 90; 
+ 
+} 
+ 
+ 
+{ 
+ 
+int a = 90; 
+cout << "Fun A : " << a << " " << ::b << endl; // local a, global b 
+ 
+} 
+ 
+ 
+ 
+int main() 
+ 
+{ 
+ 
+system(“color F0”); 
+ 
+ 
+ 
+cout << "Roll No: 24B11AI439" << endl; 
+ 
+ 
+ 
+{ 
+ 
+int a = 90;                        
+cout << "Inner A : " << a << endl; 
+} 
+ 
+ 
+ 
+cout << "Outer B : " << b << endl; 
+ 
+ 
+ 
+fun();  
+ 
+ 
+ 
+ 
+ 
+cout << "Name space 1 : " << N1::a << endl; 
+cout << "Name space 2 : " << N2::a << endl; 
+ 
+ 
+return 0; 
+ 
+}
